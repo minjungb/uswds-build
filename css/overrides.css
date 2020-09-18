@@ -3,15 +3,71 @@
 /* This override prevents the "official website of.. " text
   centered.
 */
+
 .usa-banner__inner,
-.usa-banner__header--expanded .usa-banner__inner {
+.usa-banner__header--expanded{
   margin-left: 0;
   margin-right: 0;
 }
 
 /* This override prevents the centering of content on expand.  */
-.usa-banner__content {
+.usa-banner__content, usa-nav__inner {
   margin: 0;
   padding-left: 32px !important;
   padding-right: 0 !important;
+}
+
+
+/* Changes to the header */
+
+.usa-header {
+  background-color: #252f3e;  
+}
+
+@media (min-width: 64em) {
+  .usa-header--basic .usa-navbar {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.usa-logo {
+  align-items: center;
+  display: flex; 
+  margin: 0 23px;
+  flex: 5 0 auto;
+  justify-content: flex-start;
+}
+
+.usa-logo a{
+  color: white;
+}
+
+.logo {
+  display: inline-block;
+  height: 2em;
+  margin-right: 5px;
+}
+
+
+.header-right {
+  margin-left: auto;
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+  width: 700px;
+  justify-content: space-between;
+}
+
+.button-website {
+  color: #e5a000;
+  box-shadow: inset 0 0 0 2px #e5a000;
+}
+
+.button-download {
+  color: lightgray;
+  box-shadow: inset 0 0 0 2px lightgrey;
 }
