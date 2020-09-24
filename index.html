@@ -84,83 +84,71 @@
             <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">U.S. Web Design System
                 (USWDS)</a></em>
           </div>
+
           <button class="usa-menu-btn">Menu</button>
+        </div>
 
-
-          <nav aria-label="Primary navigation" class="usa-nav">
-            <button class="usa-nav__close"><img src="node_modules/uswds/src/img/close.svg" role="img" alt="close"></button>
-            <ul class="usa-nav__primary usa-accordion">
+        <nav aria-label="Primary navigation" class="usa-nav">
+          <button class="usa-nav__close"><img src="./node_modules/uswds/src/img/close.svg" role="img" alt="close"></button>
+          <ul class="usa-nav__primary usa-accordion">
+            <li class="usa-nav__primary-item">
+              <a class="usa-nav__link usa-button usa-button--outline" href="javascript:void(0)"><span>Read website standards</span></a>
+          </li>
               <li class="usa-nav__primary-item">
-                <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
-                  aria-controls="basic-nav-section-two"><span>How to use USWDS</span></button>
-                <ul id="basic-nav-section-two" class="usa-nav__submenu">
-                  <li class="usa-nav__submenu-item">
-                    <a href="#" class=""> Navigation link</a>
-                  </li>
-                  <li class="usa-nav__submenu-item">
-                    <a href="#" class=""> Navigation link</a>
-                  </li>
-                  <li class="usa-nav__submenu-item">
-                    <a href="#" class=""> Navigation link</a>
-                  </li>
-                </ul>
+                  <a class="usa-nav__link usa-button usa-button--outline" href="javascript:void(0)"><span>Download v2.9.0</span></a>
               </li>
-              <li class="usa-nav__primary-item">
-                <a class="usa-nav__link" href="javascript:void(0)"><span>Design principles</span></a>
-              </li>
-              <li class="usa-nav__primary-item">
-                <a class="usa-nav__link" href="javascript:void(0)"><span>Components</span></a>
-              </li>
-              <li class="usa-nav__primary-item">
-                <a class="usa-nav__link" href="javascript:void(0)"><span>Design tokens</span></a>
-              </li>
-              <li class="usa-nav__primary-item">
-                <a class="usa-nav__link" href="javascript:void(0)"><span>Utilities</span></a>
-              </li>
-              <li class="usa-nav__primary-item">
-                <a class="usa-nav__link" href="javascript:void(0)"><span>Page templates</span></a>
-              </li>
-              <li class="usa-nav__primary-item">
-                <a class="usa-nav__link" href="javascript:void(0)"><span>About</span></a>
-              </li>
-            </ul>
-            <form class="usa-search usa-search--small " role="search">
+          </ul>
+          <form class="usa-search usa-search--small " role="search">
               <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
               <input class="usa-input" id="basic-search-field-small" type="search" name="search">
               <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
-            </form>
-          </nav>
-        </div>
+          </form>
+      </nav>
+
+
       </div>
+
 
     </header>
   </section>
-
+  <ul class="usa-nav__primary usa-accordion">
+    <li class="usa-nav__primary-item">
+      <button class="usa-accordion__button usa-nav__link  usa-current" aria-expanded="false"
+        aria-controls="extended-nav-section-one"><span>How to use USWDS</span></button>
+      <ul id="extended-nav-section-one" class="usa-nav__submenu">
+        <li class="usa-nav__submenu-item">
+          <a href="#" class=""> Navigation link</a>
+        </li>
+        <li class="usa-nav__submenu-item">
+          <a href="#" class=""> Navigation link</a>
+        </li>
+        <li class="usa-nav__submenu-item">
+          <a href="#" class=""> Navigation link</a>
+        </li>
+      </ul>
+    </li>
+    <li class="usa-nav__primary-item">
+      <button class="usa-nav__link"><span>Design principles</span></button>
+    </li>
+    <li class="usa-nav__primary-item">
+      <button class="usa-nav__link"><span>Components</span></button>
+    </li>
+    <li class="usa-nav__primary-item">
+      <button class="usa-nav__link"><span>Design tokens</span></button>
+    </li>
+    <li class="usa-nav__primary-item">
+      <button class="usa-nav__link"><span>Utilities</span></button>
+    </li>
+    <li class="usa-nav__primary-item">
+      <button class="usa-nav__link"><span>Page templates</span></button>
+    </li>
+    <li class="usa-nav__primary-item">
+      <button class="usa-nav__link"><span>About</span></button>
+    </li>
+  </ul>
   <!-- Subheading -->
-  <section>
-    <div class="usa-nav__inner"><button class="usa-nav__close"><img src="node_modules/uswds/src/img/close.svg"
-          role="img" alt="close"></button>
-      <ul class="usa-nav__primary usa-accordion">
-        <li class="usa-nav__primary-item">
-          <button class="usa-accordion__button usa-nav__link  usa-current" aria-expanded="false"
-            aria-controls="extended-nav-section-one"><span>Current section</span></button>
-          <ul id="extended-nav-section-one" class="usa-nav__submenu">
-            <li class="usa-nav__submenu-item">
-              <a href="#" class=""> Navigation link</a>
-            </li>
-            <li class="usa-nav__submenu-item">
-              <a href="#" class=""> Navigation link</a>
-            </li>
-            <li class="usa-nav__submenu-item">
-              <a href="#" class=""> Navigation link</a>
-            </li>
-          </ul>
-        </li>
-        <li class="usa-nav__primary-item">
-          <button class="usa-nav__link"><span>Section</span></button>
-        </li>
-    </div>
-  </section>
+
+
   <!-- <div class="grid-container">
     <div class="grid-row">
       <div class="tablet:grid-col">tablet:grid-col</div>

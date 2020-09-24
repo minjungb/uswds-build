@@ -18,28 +18,41 @@
 }
 
 
-/* Changes to the header */
-
 .usa-header {
   background-color: #252f3e;  
 }
 
+
+
+/* Changes to the header */
 @media (min-width: 64em) {
   .usa-header--basic .usa-navbar {
-    position: relative;
     width: 100%;
     height: 80px;
     display: flex;
-    align-items: center;
   }
+
+  .usa-nav-container {
+    padding: auto 20px;
+    max-width: 100%;
+  }
+}
+
+
+
+.usa-nav {
+  margin: auto;
+}
+
+.usa-button--outline > span{
+  color: white;
 }
 
 .usa-logo {
   align-items: center;
   display: flex; 
-  margin: 0 23px;
-  flex: 5 0 auto;
-  justify-content: flex-start;
+  flex: 3;
+  margin: auto;
 }
 
 .usa-logo a{
@@ -52,6 +65,9 @@
   margin-right: 5px;
 }
 
+.usa-menu-btn {
+  height: 47px;
+}
 
 .header-right {
   margin-left: auto;
