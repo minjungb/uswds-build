@@ -38,7 +38,17 @@
   }
 }
 
-
+@media (min-width: 64em){
+.sidenav {
+    display: block;
+    float: left;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    padding-right: 0;
+    padding-left: 2rem;
+    width: 15rem;
+}
+}
 
 .usa-nav {
   margin: auto;
