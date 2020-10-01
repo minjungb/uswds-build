@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/css/overrides.css" />
   <link rel="stylesheet" href="/css/main.css" />
   <title>USWDS - Build</title>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -155,6 +156,7 @@
         <a href="/design-principles/" class="usa-current">
           Design principles
         </a>
+        <ul class="usa-sidenav__sublist">
           <li class="usa-sidenav__item is-current">
             <a href="#start-with-real-user-needs">Start with real user needs</a>
           </li>
@@ -170,9 +172,573 @@
           <li class="usa-sidenav__item is-current">
             <a href="#listen">Listen</a>
           </li>
+        </ul>
       </li>
     </ul>
   </aside>
+
+
+  <main id="main-content" class="main-content">
+    <div class="styleguide-content usa-prose site-prose">
+      <header>
+        <p class="site-subheading">Design principles</p>
+        <h1 id="design-principles" class="site-page-title">Design principles</h1>
+      </header>
+      <p class="site-text-intro">USWDS Design Principles support and reflect the important guidance codified in the <a
+          href="https://digital.gov/resources/21st-century-integrated-digital-experience-act/">21st Century Integrated
+          Digital Experience Act</a>. These design principles are intended to help teams across government align on
+        important common goals and better use the design system — to be an evaluative lens for design and implementation
+        decisions. Regardless of how you build, any USWDS project should support these principles.</p>
+      <div></div>
+
+      <h2 class="border-top-05 border-primary padding-top-2 margin-bottom-2" id="start-with-real-user-needs">Start with
+        real user needs</h2>
+
+      <p class="font-lang-7"><strong>Real user needs should inform product decisions.</strong> Whether our audience
+        includes members of the public or government employees, decision-makers must include real people in our design
+        process from the beginning. Then, we need to test the assumptions we make and the products and services we build
+        with real people, to keep us focused on what is most useful and important.</p>
+
+      <h3 id="key-considerations">Key considerations</h3>
+
+      <ul>
+        <li>Does your product or service have access to the resources necessary to perform research?</li>
+        <li>Who is your primary audience?</li>
+        <li>What user needs will this product or service address?</li>
+        <li>Do you use personas or other audience segment analysis techniques to connect your solutions to different
+          segments of your audience?</li>
+        <li>How often are you testing with real people?</li>
+        <li>Which people will have the most difficulty with the product or service?</li>
+        <li>Which research methods were used?</li>
+        <li>What were the key findings?</li>
+        <li>How and where were the findings documented?</li>
+      </ul>
+
+      <h3 id="resources">Resources</h3>
+
+      <h4 id="government-resources">Government resources</h4>
+
+      <ul>
+        <li><a href="https://digital.gov/event/2018/06/14/usability-testing-with-steve-krug/">Usability testing with
+            Steve Krug</a> [digital.gov]</li>
+        <li><a href="https://methods.18f.gov/">18F’s human-centered design methods</a> [methods.18f.gov]</li>
+        <li><a href="https://handbook.18f.gov/research-guidelines/">18F’s research guidelines</a> [handbook.18f.gov]
+        </li>
+        <li><a href="https://methods.18f.gov/interview-checklist/">Interview checklist</a> [methods.18f.gov]</li>
+        <li><a href="https://18f.gsa.gov/2016/02/09/tips-for-capturing-the-best-data-from-user-interviews/">Tips for
+            capturing the best data from user interviews</a> [18f.gsa.gov]</li>
+        <li><a
+            href="https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/">How
+            to address barriers to user-centered design</a> [18f.gsa.gov]</li>
+        <li><a href="https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/">Three ways to manage
+            research projects remotely</a> [18f.gsa.gov]</li>
+        <li><a href="https://www.youtube.com/watch?v=DGDCd2ELpok">Driving innovation with design education by the
+            Lab@OPM</a> [youtube.com]</li>
+        <li><a href="https://digital.gov/event/2019/11/04/foundations-agile-i/">The Foundations of Agile, Part I</a>
+          [digital.gov]</li>
+        <li><a href="https://digital.gov/event/2019/11/05/foundations-agile-ii/">The Foundations of Agile, Part II</a>
+          [digital.gov]</li>
+      </ul>
+
+      <h4 id="non-government-resources">Non-government resources</h4>
+
+      <ul>
+        <li><a href="https://lawsofux.com/">The laws of UX</a> [lawsofux.com]</li>
+        <li><a href="https://alistapart.com/">A List Apart: Articles, books, and events for people who make websites</a>
+          [alistapart.com]</li>
+      </ul>
+
+      <h3 id="practical-actions">Practical Actions</h3>
+
+      <ul>
+        <li><strong>Start early.</strong> Early in the project, spend time with current and prospective users to better
+          understand their perspective and the context of the problem.</li>
+        <li><strong>Use a range of methods.</strong> Use a range of qualitative and quantitative research methods (such
+          as <a href="https://methods.18f.gov/">18F Methods</a>) to determine people’s goals, needs, and behaviors.</li>
+        <li><strong>Use prototypes.</strong> Use <a href="https://methods.18f.gov/make/prototyping/">prototypes</a> to
+          test your assumptions and solutions with real people, in the field if possible.</li>
+        <li><strong>Share your findings.</strong> Document and share your research findings with team members, managers,
+          and the public, when practical.</li>
+        <li><strong>Test regularly.</strong> As the product is being built, regularly test it with potential users to
+          ensure it meets people’s needs.</li>
+      </ul>
+
+      <h2 class="border-top-05 border-primary padding-top-2 margin-bottom-2" id="earn-trust">Earn trust</h2>
+
+      <p class="font-lang-7"><strong>Trust has to be earned every time.</strong> Federal websites and digital services
+        can’t assume it. Trust is about understanding and meeting or exceeding expectations, a process that can be
+        established quickly and maintained over continued interactions, but is easily damaged. Be reliable, consistent,
+        and honest. Reduce the impact of failure with solid design and engineering. Be a good steward of your audience’s
+        data, resources, and time.</p>
+
+      <h3 id="key-considerations-1">Key considerations</h3>
+
+      <ul>
+        <li>Do users understand that this is a government site or service?</li>
+        <li>What are the public’s expectations of your product?</li>
+        <li>What private or sensitive data do you ask your users to provide?</li>
+        <li>What are you doing to keep that data private?</li>
+        <li>Does your product utilize redundancy to minimize the effect of server failure or traffic spikes?</li>
+        <li>Does your product use continuous integration testing to prevent unintended regressions?</li>
+        <li>Can users to edit or undo actions or edit data they’ve added to the system?</li>
+        <li>How often do you check that your service works as intended?</li>
+        <li>What components are made available to the public as open source?</li>
+        <li>How quickly do you respond to bug reports?</li>
+        <li>Is your content written in clear, easy-to-follow plain language?</li>
+        <li>Do you provide meaningful access to people with limited English proficiency?</li>
+      </ul>
+
+      <h3 id="resources-1">Resources</h3>
+
+      <h4 id="government-resources-1">Government resources</h4>
+
+      <ul>
+        <li><a href="https://playbook.cio.gov/">Digital Services Playbook</a> [playbook.cio.gov]</li>
+        <li><a href="https://designsystem.digital.gov/performance/">U.S. Web Design System performance guidelines</a>
+          [designsystem.digital.gov]</li>
+        <li><a href="https://https.cio.gov/">The HTTPS-only standard</a> [https.cio.gov]</li>
+        <li><a href="https://home.dotgov.gov/">.gov domain registration</a> [dotgov.gov]</li>
+        <li><a href="https://plainlanguage.gov/guidelines/">Federal plain language guidelines</a> [plainlanguage.gov]
+        </li>
+        <li><a
+            href="https://oes.gsa.gov/assets/abstracts/OES%20Learnings%20on%20Writing%20Better%20Communications%202018.pdf">How
+            to design effective communications</a> [PDF; oes.gsa.gov]</li>
+        <li><a href="https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/">Best practices for
+            multilingual websites</a> [digital.gov]</li>
+      </ul>
+
+      <h4 id="non-government-resources-1">Non-government resources</h4>
+
+      <ul>
+        <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Ten usability heuristics</a>
+          [nngroup.com]</li>
+        <li><a href="https://www.nngroup.com/articles/link-promise/">A link is a promise</a> [nngroup.com]</li>
+        <li><a href="https://www.nngroup.com/articles/slips/">Preventing user errors</a> [nngroup.com]</li>
+        <li><a href="https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust">Designing for trust</a>
+          [TED.com]</li>
+        <li><a href="https://humanebydesign.com/">Humane by design</a> [humanebydesign.com]</li>
+      </ul>
+
+      <h3 id="practical-actions-1">Practical actions</h3>
+
+      <ul>
+        <li><strong>Identify yourself.</strong> Clearly identify your site as a federal government site.</li>
+        <li><strong>Build with modern best practices.</strong> See the <a href="https://playbook.cio.gov/">Digital
+            Services Playbook</a>.</li>
+        <li><strong>Review your content.</strong> Review your content at least twice per year to assure information is
+          correct and non-redundant.</li>
+        <li><strong>Use the proper government domain.</strong> Use a <a href="https://home.dotgov.gov/">.gov </a>
+          top-level domain and <a href="https://https.cio.gov/">https</a> with up-to-date certificates.</li>
+        <li><strong>Add the USWDS banner component.</strong> This shows your site is an official government website and
+          explain the benefits of secure connections.</li>
+        <li><strong>Identify link rot.</strong> Find and fix broken links on your website.</li>
+        <li><strong>Keep communications simple.</strong> Ensure content is easy, personal, and timely.</li>
+        <li><strong>Write for the web.</strong> Expect users to <a href="https://plainlanguage.gov/guidelines/web/">skim
+            and scan</a>.</li>
+        <li><strong>Properly manage data and records.</strong> Reach out to your agency’s <a
+            href="https://www.archives.gov/records-mgmt/agency">records officer</a> and <a
+            href="https://www.fpc.gov/council-members/">privacy official</a>. Consult with them to ensure you are
+          properly managing data and records (see play #11, <a href="https://playbook.cio.gov/#play11">Manage security
+            and privacy through reusable processes</a>, in the Digital Services Playbook).</li>
+        <li><strong>Understand expectations.</strong> Understand what your audience expects of your service, and
+          validate the success of your service with real users.</li>
+        <li><strong>Publish open code and data.</strong> When appropriate, publish <a href="https://code.gov/">source
+            code</a> and <a href="https://www.data.gov/">datasets</a> of projects or components online.</li>
+        <li><strong>Work in the open.</strong> When appropriate, share your development process and progress publicly.
+        </li>
+      </ul>
+
+      <h2 class="border-top-05 border-primary padding-top-2 margin-bottom-2" id="embrace-accessibility">Embrace
+        accessibility</h2>
+
+      <p class="font-lang-7"><strong>Accessibility affects everybody, build it into every decision.</strong> Legal
+        requirements are a critical, necessary starting point, but this is only the beginning. Accessibility is about
+        real people who use our services — it’s usability for people who interact with products differently. Everyone
+        who works on government websites has a role to play in making federal resources accessible and inclusive. Design
+        generously and celebrate accessibility requirements as a set of design constraints that help us create a better
+        product for all users.</p>
+
+      <h3 id="key-considerations-2">Key considerations</h3>
+
+      <ul>
+        <li>Can users navigate your site using only the keyboard?</li>
+        <li>Can users use a screen reader to access the page content?</li>
+        <li>Can users quickly understand the main points of your content?</li>
+        <li>Can users easily interpret content associated with graphic elements?</li>
+        <li>Can users easily understand and complete key tasks?</li>
+        <li>Are you testing your service with a broad range of users?</li>
+        <li>Do you know your agency accessibility team?</li>
+        <li>Is your site organized such that everyone can navigate it easily?</li>
+        <li>Are you using accessibility testing tools?</li>
+        <li>Did your accessibility testing tools provide accurate results?</li>
+        <li>Are you providing content in <a
+            href="https://digital.gov/resources/improving-access-to-services-for-people-with-limited-english-proficiency-e-o-13166/">languages
+            other than English</a>, as appropriate for the audience?</li>
+      </ul>
+
+      <h3 id="resources-2">Resources</h3>
+
+      <h4 id="government-resources-2">Government resources</h4>
+
+      <ul>
+        <li><a href="https://www.section508.gov/">The Section 508 accessibility program</a> [section508.gov]</li>
+        <li><a href="https://accessibility.digital.gov/">Accessibility for Teams guide</a> [accessibility.digital.gov]
+        </li>
+        <li><a href="https://www.section508.gov/tools/coordinator-listing">Find your Section 508 Coordinator</a>
+          [section508.gov]</li>
+        <li><a href="https://section508coordinators.github.io/ICTTestingBaseline/">Section 508 ICT Testing Baseline</a>
+          [section508coordinators.github.com ]</li>
+        <li><a href="https://www.plainlanguage.gov/">Learn about writing in plain language</a> [plainlanguage.gov]</li>
+        <li><a href="https://www.plainlanguage.gov/resources/">Plain language resources</a> [plainlanguage.gov]</li>
+        <li><a href="https://accessibility.18f.gov/">18F’s accessibility guide</a> [accessibility.18f.gov]</li>
+        <li><a href="https://www.section508.gov/buy/accessibility-requirements-tool">Accessibility Requirements Tool
+            (ART) for contracting</a> [section508.gov]</li>
+        <li><a href="https://www.section508.gov/blog/Universal-Design-What-is-it">Understanding universal design</a>
+          [section508.gov]</li>
+      </ul>
+
+      <h4 id="non-government-resources-2">Non-government resources</h4>
+
+      <ul>
+        <li><a href="https://www.w3.org/WAI/perspective-videos/">Web Accessibility Perspectives Videos</a> [w3.org]</li>
+        <li><a href="https://inclusivedesignprinciples.org/">Inclusive design principles</a>
+          [inclusivedesignprinciples.org]</li>
+        <li><a href="https://www.youtube.com/watch?v=z8xUCzToff8">Accessibility fundamentals with Rob Dodson</a>
+          [youtube.com]</li>
+        <li><a href="https://www.microsoft.com/design/inclusive/">Microsoft’s inclusive design manual</a>
+          [microsoft.com]</li>
+        <li><a href="https://inclusive-components.design/">Inclusive components by Heydon Pickering</a>
+          [inclusive-components.design]</li>
+        <li><a href="https://humanebydesign.com/">Humane by design</a> [humanebydesign.com]</li>
+      </ul>
+
+      <h3 id="practical-actions-2">Practical actions</h3>
+
+      <ul>
+        <li><strong>Humanize accessibility.</strong> Seek out examples of the real life impact of accessible products
+          and services. Try to make accessibility less abstract and more personal.</li>
+        <li><strong>Use agency resources.</strong> Reach out to <a
+            href="https://www.section508.gov/tools/coordinator-listing">your agency’s accessibility team</a> and build a
+          relationship with them.</li>
+        <li><strong>Learn about assistive technology.</strong> Get familiar with the basic ways people use assistive
+          technology and <a href="https://www.w3.org/WAI/people-use-web/">how people with disabilities use the web</a>.
+        </li>
+        <li><strong>Follow existing standards.</strong> Conform to the <a
+            href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh">Revised
+            508 Standards</a> and <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a>.</li>
+        <li><strong>Work from existing resources.</strong> Consult <a
+            href="https://www.section508.gov/">Section508.gov</a>, <a
+            href="https://accessibility.digital.gov/">Accessibility for Teams</a>, and the <a
+            href="https://accessibility.18f.gov/">18F Accessibility Guide</a>.</li>
+        <li><strong>Design generously.</strong> Adopt an <a href="http://inclusivedesignprinciples.org/">inclusive
+            design</a> mentality.</li>
+        <li><strong>Develop accessible code.</strong> Ensure front-end code is written accessibly and conducts manual
+          and automated testing.</li>
+        <li><strong>Write accessible content.</strong> Ensure content is written in <a
+            href="https://www.plainlanguage.gov/">plain language</a> and <a
+            href="https://accessibility.18f.gov/headings/">headings</a>, <a
+            href="https://accessibility.18f.gov/images/">images</a>, and <a
+            href="https://accessibility.18f.gov/links/">links</a> are accurately labeled.</li>
+        <li><strong>Build accessible designs.</strong> Ensure that designs are accessible, pages are laid out in a
+          logical order, and content meets color contrast requirements.</li>
+        <li><strong>Test broadly.</strong> Test with a broad range of users and abilities throughout the design and
+          development process, including manual accessibility testing against the <a
+            href="https://www.section508.gov/test/trusted-tester">Trusted Tester and ICT Testing Baseline</a>.</li>
+        <li><strong>Be responsive.</strong> Remediate accessibility issues when you discover them.</li>
+        <li><strong>Contract for accessibility.</strong> Use the <a
+            href="https://www.section508.gov/buy/accessibility-requirements-tool">Accessibility Requirements Tool</a>
+          (ART) to incorporate accessibility requirements into your contracts.</li>
+      </ul>
+
+      <h2 class="border-top-05 border-primary padding-top-2 margin-bottom-2" id="promote-continuity">Promote continuity
+      </h2>
+
+      <p class="font-lang-7"><strong>Minimize disruption and provide a consistent experience: throughout services, over
+          time, and across agencies, platforms, and devices.</strong> Consistency is not necessarily conformity.
+        Agencies, sites, and services may have different audiences, missions, and goals — and the way we implement our
+        solutions may differ — but we promote continuity by starting from shared solutions and values. These design
+        principles are one set of shared values, and the design language of the U.S. Web Design System is another.
+        Strive to build user-centered solutions that address the whole experience, not just a user’s specific task, but
+        the context of their journey.</p>
+
+      <h3 id="key-considerations-3">Key considerations</h3>
+
+      <ul>
+        <li>Do you know if your audience understands that your product is a government site or service?</li>
+        <li>Do you know if your audience understands the purpose of each page or section?</li>
+        <li>Is it always clear what users are expected to do next?</li>
+        <li>Does your agency have established style guidance?</li>
+        <li>Have you tried and tested shared solutions before developing your own?</li>
+        <li>Have you considered your service in the context of customer or user journeys?</li>
+        <li>Have you identified your highest-impact customer or user journeys? Within these journeys, have you
+          identified specific opportunities at which to collect feedback?</li>
+        <li>Have you considered your service in the broader context of a service ecosystem?</li>
+        <li>Can you reach across agencies and silos to collaborate and share solutions?</li>
+        <li>Does your site or service have a consistent experience on any device or browser?</li>
+        <li>Do users have equivalent access to your information and services on any device?</li>
+        <li>What factors outside the scope of your product or service affect its success?</li>
+        <li>What other government products or services are related to the success of your product or service?</li>
+        <li>Are you able to coordinate solutions with other projects that share a similar audience?</li>
+      </ul>
+
+      <h3 id="resources-3">Resources</h3>
+
+      <h4 id="government-resources-3">Government resources</h4>
+
+      <ul>
+        <li><a href="https://digital.gov/event/2018/05/31/this-how-we-work-together-with-brad-frost/">How design systems
+            help us work together</a> [digital.gov]</li>
+        <li><a href="https://designsystem.digital.gov/">The U.S. Web Design System</a> [designsystem.digital.gov]</li>
+        <li><a href="https://methods.18f.gov/decide/journey-mapping/">The Journey Mapping method</a> [methods.18f.gov]
+        </li>
+        <li><a href="https://digital.gov/2013/08/20/embracing-responsive-design/">Embracing responsive design</a>
+          [digital.gov]</li>
+        <li><a href="https://www.usda.gov/digital-strategy/design-and-brand">Example: USDA’s design and brand
+            guidelines</a> [usda.gov]</li>
+        <li><a href="https://design.cms.gov/">Example: Centers for Medicare and Medicaid Services design system</a>
+          [design.cms.gov]</li>
+        <li><a href="https://labs.usa.gov/">Federal Front Door research findings</a> [labs.usa.gov]</li>
+        <li><a href="https://www.performance.gov/CAP/sharing-quality-services/">Sharing Quality Services Cross-Agency
+            Performance goal</a> [performance.gov]</li>
+        <li><a href="https://digital.gov/resources/mobile/principles/">Eight Principles of Mobile-Friendliness</a>
+          [digital.gov]</li>
+        <li><a href="https://digital.gov/services/mobile-application-testing-program/">Test on real devices with the
+            Federal Crowdsource Mobile Testing Program</a> [digital.gov]</li>
+      </ul>
+
+      <h4 id="non-government-resources-3">Non-government resources</h4>
+
+      <ul>
+        <li><a href="https://www.nngroup.com/articles/journey-mapping-101/">Journey mapping 101</a>[nngroup.com]</li>
+        <li><a href="https://www.nngroup.com/articles/service-design-101/">Service design 101</a> [nngroup.com]</li>
+        <li><a href="https://www.nngroup.com/articles/service-blueprints-definition/">Service blueprints</a>
+          [nngroup.com]</li>
+        <li><a
+            href="https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity">Using
+            a service ecosystem map</a> [service-design-network.org]</li>
+        <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Ten usability heuristics</a>
+          [nngroup.com]</li>
+        <li><a href="http://atomicdesign.bradfrost.com/table-of-contents/">Atomic Design</a>
+          [atomicdesign.bradfrost.com]</li>
+      </ul>
+
+      <h3 id="practical-actions-3">Practical actions</h3>
+
+      <ul>
+        <li><strong>Identify as a government site.</strong> Clearly and consistently identify as a government site on
+          every page.</li>
+        <li><strong>Use a style guide.</strong> Use a simple and flexible style guide for content and style throughout a
+          product or service. Know if existing guides already exist in your agency before developing something new.</li>
+        <li><strong>Connect related services with a similar style.</strong> Use the style guide consistently for related
+          digital services.</li>
+        <li><strong>Support a wide range of devices and platforms.</strong> Support a wide range of devices for a <a
+            href="https://digital.gov/resources/mobile/principles/">mobile-friendly experience</a>.</li>
+        <li><strong>Test on real devices.</strong> Test your site on the actual mobile devices as often as possible.
+        </li>
+        <li><strong>Move or remove content with care.</strong> Provide proper notice and forwarding when content is
+          moved or removed.</li>
+        <li><strong>Clarify multi-step processes.</strong> Give users clear information about where they are in each
+          step of a process.</li>
+        <li><strong>Support multi-session processes.</strong> Provide users with a way to exit and return later to
+          complete a process.</li>
+        <li><strong>Support re-use of saved data.</strong> Assure that repeat website visitors, who have logged in, can
+          auto-populate forms with saved information.</li>
+        <li><strong>Find a community.</strong> Participate in cross-government communities of practice.</li>
+      </ul>
+
+      <h2 class="border-top-05 border-primary padding-top-2 margin-bottom-2" id="listen">Listen</h2>
+
+      <p class="font-lang-7"><strong>Evaluate and improve your product by listening to your audience and learning from
+          what you hear.</strong> Continuous feedback drives continuous improvement. Measure customer experience — how
+        well what we’ve built is working for our audience — at every stage of a project, and as projects grow and
+        mature. Listen to what people say and observe how they interact with our products or services, whether through
+        direct observation or through analytics data. If we’re not listening, we’re not learning.</p>
+
+      <h3 id="key-considerations-4">Key considerations</h3>
+
+      <ul>
+        <li>Does your product or service have access to people with design, development, and research skills?</li>
+        <li>What are the key metrics your service uses to measure success?</li>
+        <li>How are your success metrics tied to positive customer or user outcomes?</li>
+        <li>How have these metrics performed over the life of the service?</li>
+        <li>Do you have system monitoring tools and processes in place to identify and respond to issues?</li>
+        <li>Which tools are in place to measure user behavior, and how do you use them?</li>
+        <li>Do you measure customer satisfaction and take steps to improve satisfaction?</li>
+        <li>Do you assess your customer experience maturity and develop action plans to identify focus areas for
+          improvement?</li>
+        <li>How are you collecting user feedback for bugs and other product issues?</li>
+        <li>Do all members of the project team participate in user interviews and research activities?</li>
+        <li>Do you cultivate direct community participation in your project with activities like hackathons?</li>
+        <li>How often are you reviewing and addressing feedback and analytics?</li>
+        <li>Do you contribute feedback to services your project uses?</li>
+      </ul>
+
+      <h3 id="resources-4">Resources</h3>
+
+      <h4 id="government-resources-4">Government resources</h4>
+
+      <ul>
+        <li><a href="https://digital.gov/services/dap/">Guide to the Digital Analytics Program (DAP)</a> [digital.gov]
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=p-y9T23ziEg">Getting started with Search.gov</a> [search.gov]</li>
+        <li><a href="https://oes.gsa.gov/">Office of Evaluation Sciences</a> [oes.gsa.gov]</li>
+        <li><a href="https://www.performance.gov/CAP/cx/">Improving Customer Experience: Cross-Agency Priority Goal</a>
+          [performance.gov]</li>
+        <li><a href="https://www.performance.gov/tips-for-starting-your-customer-experience-journey/">Tips for Starting
+            Your Customer Experience Journey</a> [performance.gov]</li>
+        <li><a href="https://www.performance.gov/cx/a11-280.pdf">OMB Circular A-11 Section 280: Managing Customer
+            Experience and Improving Service Delivery</a> [performance.gov]</li>
+        <li><a href="https://www.usda.gov/digital-strategy/research/plays#research2">USDA’s guidance on conducting a
+            regular customer experience (or A-11) survey</a> [usda.gov]</li>
+        <li><a href="https://www.performance.gov/cx/CXMaturitySelfAssessment.pdf">Customer Experience Maturity
+            Self-Assessment</a> [performance.gov]</li>
+        <li><a href="https://www.performance.gov/cx/CXActionPlanTemplate.pptx">Customer Experience Action Plan
+            Template</a> [performance.gov]</li>
+        <li><a href="https://digital.gov/resources/customer-experience-toolkit/">Customer Experience Toolkit</a>
+          [digital.gov]</li>
+        <li><a href="https://www.youtube.com/watch?v=5llJ98UkXYI">Top tasks: prioritizing what is truly important</a>
+          [digital.gov]</li>
+      </ul>
+
+      <h4 id="non-government-resources-4">Non-government resources</h4>
+
+      <ul>
+        <li><a href="https://medium.com/google-design/stop-talking-start-listening-7a555ec8ebb1">Google Design: Stop
+            Talking, Start Listening</a> [medium.com]</li>
+        <li><a href="https://www.youtube.com/watch?v=6_mHCOAAEI8">Google Design: Listening as design strategy</a>
+          [youtube.com]</li>
+      </ul>
+
+      <h3 id="practical-actions-4">Practical actions</h3>
+
+      <ul>
+        <li><strong>Actively collect issues.</strong> Offer users a mechanism to report bugs and issues, and be
+          responsive to these reports.</li>
+        <li><strong>Collect direct feedback.</strong> Actively collect, review, and address feedback about your product
+          or service (such as through surveys or customer email).</li>
+        <li><strong>Analyze analytics data.</strong> Implement both the governmentwide <a
+            href="https://digital.gov/services/dap/">Digital Analytics Program</a> (DAP) and agency-specific analytics
+          services and analyze the data.</li>
+        <li><strong>Analyze search results.</strong> Include a search function on your site (through <a
+            href="https://search.gov/">Search.gov</a> or another tool) and analyze the search data.</li>
+        <li><strong>Analyze social media data.</strong> If you use social media platforms, analyze the data from these
+          platforms.</li>
+        <li><strong>Publish metrics.</strong> Publish metrics internally and externally.</li>
+        <li><strong>Coordinate large projects with service design.</strong> Conduct a service design analysis when
+          designing, coordinating, or consolidating large sites or services.</li>
+        <li><strong>Involve the team in research.</strong> Involve all members of a project team in user interviews and
+          research activities to hear directly from real users.</li>
+        <li><strong>Use direct observation.</strong> Use direct observation in your research whenever possible to
+          understand the context of a user’s actions.</li>
+        <li><strong>Keep testing.</strong> Test and re-test with real users.</li>
+        <li><strong>Share back.</strong> Contribute feedback and share solutions back to the internal and open source
+          projects you use.</li>
+      </ul>
+
+    </div>
+  </main>
+
+
+  <footer class="usa-footer site-footer" role="contentinfo">
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container footer-content">
+        <h3>Become part of the community</h3>
+        <p>
+          USWDS is an active open source community of government engineers,
+          content specialists, and designers. Our contributors both in and out of
+          government support dozens of agencies and nearly 200 sites.
+        </p>
+        <div class="grid-row footer-contact-links">
+          <div class="tablet:grid-col">
+            <div class="usa-media-block">
+              <img class="usa-media-block__img" src="/img/home/icon-question.svg" alt="" />
+              <div class="usa-media-block__body">
+                <h4>Running into an issue?</h4>
+                <a href="https://github.com/uswds/uswds/issues/new">
+                  Ask questions on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tablet:grid-col">
+            <div class="usa-media-block">
+              <img class="usa-media-block__img" src="/img/home/icon-slack.svg" alt="" />
+              <div class="usa-media-block__body">
+                <h4>Engage with the community</h4>
+                <a href="https://chat.18f.gov/">
+                  Join our Slack channel
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tablet:grid-col">
+            <div class="usa-media-block">
+              <img class="usa-media-block__img" src="/node_modules/uswds/src/img/icon-envelope.svg" alt="" />
+              <div class="usa-media-block__body">
+                <h4>Reach the team</h4>
+                <a href="mailto:uswds@support.digitalgov.gov">
+                  Send us an email
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tablet:grid-col">
+            <div class="usa-media-block">
+              <img class="usa-media-block__img" src="icon-twitter.svg" alt="" />
+              <div class="usa-media-block__body">
+                <h4>Stay updated</h4>
+                <a href="https://twitter.com/USWDS">
+                  Follow us on Twitter
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-base-light padding-y-1 line-height-sans-3 font-lang-4">
+        <div class="grid-container">
+          Looking for USWDS v1 documentation?
+          <a href="https://v1.designsystem.digital.gov" class="text-ink text-bold hover:text-no-underline">Visit
+            v1.designsystem.digital.gov</a>
+        </div>
+      </div>
+      
+      <div class="footer-section-bottom">
+        <div class="grid-container">
+          <p>
+            The United States Web Design System is a project of GSA’s
+            <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service">Federal Acquisition
+              Service</a>, <a
+              href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Office
+              of Technology Transformation Services</a>. This website is hosted on
+            <a href="https://federalist.18f.gov">Federalist</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="usa-identifier">
+    <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__logos">
+          <a href="javascript:void(0);" class="usa-identifier__logo">
+            <img class="usa-identifier__logo-img" src="/node_modules/uswds/src/img/gsa-logo.svg" alt="GSA logo"
+              role="img">
+          </a>
+        </div>
+        <div class="usa-identifier__identity" aria-label="Agency description">
+          <p class="usa-identifier__identity-domain">designsystem.digital.gov</p>
+          <p class="usa-identifier__identity-disclaimer">
+            An official website of the <a href="https://gsa.gov">General Services Administration</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
 
   <script src="./node_modules/uswds/dist/js/uswds.min.js"></script>
 </body>
