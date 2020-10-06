@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/node_modules/uswds/dist/css/uswds.css" />
   <link rel="stylesheet" href="/css/overrides.css" />
-  <link rel="stylesheet" href="/css/main.css" />
   <title>USWDS - Build</title>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -92,6 +91,11 @@
         <nav aria-label="Primary navigation" class="usa-nav">
           <button class="usa-nav__close"><img src="./node_modules/uswds/src/img/close.svg" role="img"
               alt="close"></button>
+          <form class="usa-search usa-search--small " role="search">
+            <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
+            <input class="usa-input" id="basic-search-field-small" type="search" name="search">
+            <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
+          </form>
           <ul class="usa-nav__primary usa-accordion">
             <li class="usa-nav__primary-item">
               <a class=" usa-button usa-button--outline" href="javascript:void(0)"><span>Read website
@@ -101,11 +105,7 @@
               <a class="usa-button usa-button--outline" href="javascript:void(0)"><span>Download v2.9.0</span></a>
             </li>
           </ul>
-          <form class="usa-search usa-search--small " role="search">
-            <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
-            <input class="usa-input" id="basic-search-field-small" type="search" name="search">
-            <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
-          </form>
+
         </nav>
 
 
@@ -703,7 +703,7 @@
             v1.designsystem.digital.gov</a>
         </div>
       </div>
-      
+
       <div class="footer-section-bottom">
         <div class="grid-container">
           <p>

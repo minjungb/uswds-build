@@ -3,7 +3,9 @@
 /* This override prevents the "official website of.. " text
   centered.
 */
-
+a {
+  color: #005ea2;
+}
 .usa-prose {
   font-family: 'Public Sans', sans-serif;
 }
@@ -13,6 +15,10 @@
   font-size: 1.95rem;
   line-height: 1.2;
   font-weight: bold;
+}
+
+.usa-prose > * + p {
+  margin-top: 0.5rem;
 }
 
 .usa-banner__inner,
@@ -48,11 +54,16 @@
 
   .main-content {
     margin: 0 18em;
+    margin-top: 2.5rem;
   }
 }
 
 .usa-media-block__body {
   flex: 1 1 0%;
+}
+
+.usa-nav__primary {
+  padding-left: 30px;
 }
 
 .site-sidenav.usa-sidenav .usa-sidenav__sublist {
@@ -94,11 +105,45 @@
     padding-right: 0;
     padding-left: 2rem;
     width: 15rem;
+  }
+
+  .usa-nav .usa-search {
+    margin: auto 1rem;
+  }
+
+  .site-header .site-logo .usa-logo__text {
+    display: inherit;
+    letter-spacing: -.01em;
 }
 }
 
 .usa-nav {
   margin: auto;
+}
+
+.site-page-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
+}
+
+.site-text-intro {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.site-subheading {
+  line-height: 1.1;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Public Sans Web,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: .81rem;
+  color: rgba(0,0,0,.6);
+  letter-spacing: .025em;
+  margin-bottom: .5rem;
+  margin-top: 0;
 }
 
 .usa-button--outline > span{
@@ -114,11 +159,17 @@
 
 .usa-logo a{
   color: white;
+  width: 300px;
+}
+
+.usa-logo__text{
+  font-size: 20px;
+  line-height: 72px;
 }
 
 .logo {
   display: inline-block;
-  height: 2em;
+  height: 1.5em;
   margin-right: 5px;
 }
 
