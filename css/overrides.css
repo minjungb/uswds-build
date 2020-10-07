@@ -173,6 +173,7 @@ h4 {
   display: flex; 
   flex: 3;
   margin: auto;
+  
 }
 
 /* Change text color of the logo */
@@ -183,7 +184,7 @@ h4 {
 /* U.S. Web Design System (USWDS) text next to logo */
 .usa-logo__text{
   font-size: 20px;
-  line-height: 72px;
+  min-width: 300px;
 }
 
 
@@ -237,7 +238,6 @@ h4 {
 /* container for the buttons + github logo on global nav */
 .buttons {
   min-width: 450px;
-  margin-left: 1rem;
   display: flex;
   align-items: center;
 }
