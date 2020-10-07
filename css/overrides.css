@@ -98,15 +98,6 @@ h4 {
   background-color: white;
 }
 
-.site-nav-secondary.sticky {
-  z-index: 200;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
 
 
 /* Side nav */
@@ -129,6 +120,17 @@ h4 {
     border: 2px solid rgba(0,0,0,.1);
     border-radius: .25rem;
     padding: 0;
+  }
+
+  /* Makes the submenu sticky at web screen size. */
+    .site-nav-secondary.sticky {
+    z-index: 200;
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 }
 
