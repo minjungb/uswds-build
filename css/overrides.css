@@ -3,11 +3,29 @@
 /* This override prevents the "official website of.. " text
   centered.
 */
+.usa-banner__inner,
+.usa-banner__header--expanded{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* This override prevents the centering of content on expand.  */
+.usa-banner__content, .usa-nav__inner {
+  margin: 0;
+  padding-left: 32px !important;
+  padding-right: 0 !important;
+}
+
+
+/* ///// text-related changes ///// */
+
 a {
   color: #005ea2;
 }
+
 .usa-prose {
   font-family: 'Public Sans', sans-serif;
+  margin-bottom: 3em;
 }
 
 .usa-prose > h2, .usa-prose > h3 {
@@ -21,30 +39,18 @@ a {
   margin-top: 0.5rem;
 }
 
-.usa-banner__inner,
-.usa-banner__header--expanded{
-  margin-left: 0;
-  margin-right: 0;
+h3 {
+  font-size: 20px !important;
 }
 
-.usa-nav__link > span {
-  font-family: 'Public Sans', sans-serif;
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: 400;
-}
-
-/* This override prevents the centering of content on expand.  */
-.usa-banner__content, .usa-nav__inner {
-  margin: 0;
-  padding-left: 32px !important;
-  padding-right: 0 !important;
+h4 {
+  font-family: 'Public Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  text-transform: uppercase !important;
 }
 
 
-.usa-header {
-  background-color: #252f3e;  
-}
 
 /* Changes to the header */
 @media (min-width: 64em) {
@@ -76,40 +82,34 @@ a {
   flex: 1 1 0%;
 }
 
+/* subheader below global nav */
 .usa-nav__primary {
   padding-left: 30px;
 }
 
-.site-sidenav.usa-sidenav .usa-sidenav__sublist {
-  font-size: .85rem;
+.usa-nav__link > span {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
 }
 
-.site-sidenav.usa-sidenav .usa-current::after {
-  border-radius: 0;
-  background-color: #2672de;
-  bottom: -1px;
-  left: -2px;
+.site-nav-secondary {
+  background-color: white;
+}
+
+.site-nav-secondary.sticky {
+  z-index: 200;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  z-index: 100;
 }
 
-.site-sidenav.usa-sidenav {
-  font-family: Public Sans Web,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-  font-size: .94rem;
-  line-height: 1.4;
-  background-color: #fff;
-  border: 2px solid rgba(0,0,0,.1);
-  border-radius: .25rem;
-  padding: 0;
-}
 
-.usa-sidenav__sublist {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-  font-size: 1rem;
-}
-
+/* Side nav */
 @media (min-width: 64em){
   .sidenav {
     display: block;
@@ -121,28 +121,53 @@ a {
     width: 15rem;
   }
 
-  .usa-nav .usa-search {
-    margin: auto 1rem;
+  /* change font size, create gray border around sidenav */
+  .site-sidenav.usa-sidenav {
+    font-size: 13px;
+    line-height: 1.4;
+    background-color: #fff;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: .25rem;
+    padding: 0;
   }
-
-  .site-header .site-logo .usa-logo__text {
-    display: inherit;
-    letter-spacing: -.01em;
-  }
-
-  .usa-input {
-    background-color: #13171f;
-    color: #fff;
-    height: 39px;
-    max-width: 30rem;
-  }
-
-
-}
-.usa-nav {
-  margin: auto;
 }
 
+  /* blue active-state decoration on left side of side-nav */
+  .site-sidenav.usa-sidenav .usa-current::after {
+    border-radius: 0;
+    background-color: #2672de;
+    bottom: -1px;
+    left: -2px;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* change default active color to black on sidenav*/
+  .usa-current{
+    color: black !important;
+    font-family: 'Public Sans', sans-serif !important;
+  }
+
+  /* Make inactive text in sidenav not bolded */
+  .usa-current.inactive {
+    font-weight: normal;
+  }
+
+
+/* ///// Global nav and logo ///// */
+
+/* BG color for global nav*/
+.usa-header {
+  background-color: #252f3e;  
+}
+
+/* logo image */
+.logo {
+  height: 35px;
+  margin-right: 5px;
+}
+
+/* container for logo on right side of global nav */
 .usa-logo {
   align-items: center;
   display: flex; 
@@ -150,22 +175,22 @@ a {
   margin: auto;
 }
 
+/* Change text color of the logo */
 .usa-logo a{
   color: white;
-  width: 300px;
 }
 
+/* U.S. Web Design System (USWDS) text next to logo */
 .usa-logo__text{
   font-size: 20px;
   line-height: 72px;
 }
 
-.logo {
-  display: inline-block;
-  height: 1.5em;
-  margin-right: 5px;
-}
 
+
+/* ///// Main header on page ///// */
+
+/* "Design Principles" main heading */
 .site-page-title {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -173,12 +198,7 @@ a {
   margin: 0;
 }
 
-.site-text-intro {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 300;
-}
-
+/* "Design Principles" text above the main heading on the page */
 .site-subheading {
   line-height: 1.1;
   font-weight: 400;
@@ -191,10 +211,38 @@ a {
   margin-top: 0;
 }
 
-.usa-button--outline > span{
-  color: white;
+/* summary paragraph below subheading that's different from the rest of the page */
+.site-text-intro {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
 }
 
+
+/* ///// Right side of nav with search and buttons ///// */
+
+/* Input box on search */
+.usa-input {
+  background-color: #13171f;
+  color: #fff;
+  height: 39px;
+  max-width: 200px;
+}
+
+/* Search icon button height adjustment */
+.search-btn {
+  height: 39px !important;
+}
+
+/* container for the buttons + github logo on global nav */
+.buttons {
+  min-width: 450px;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* button colors on global nav */
 .buttons .site-button-standards{
   box-shadow: inset 0 0 0 2px #e5a000;
   color: #e5a000;
@@ -207,36 +255,113 @@ a {
   color: rgba(255,255,255,.7);
 }
 
+/* Footer stuff */
+@media (min-width: 64em){
+  .usa-footer__secondary-section>.grid-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
-.buttons {
-  min-width: 500px;
-  margin: auto 1rem;
+  .footer-content{
+    margin-bottom: 2rem;
+  }
+
+  .usa-media-block {
+    margin-right: 1rem;
+  }
+
+  .usa-identifier__container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+  }
+
+  .usa-identifier__required-links-list {
+    -moz-column-count: 4;
+    column-count: 4;
+  }
 }
 
-.usa-menu-btn {
-  height: 47px;
+@media (min-width: 40em){
+  .tablet:grid-col {
+      flex: 1 1 0%;
+      width: auto;
+      max-width: 100%;
+      min-width: 1px;
+  }
+
+  .usa-identifier__section--masthead .usa-identifier__container {
+    align-items: center;
+    display: flex;
+  }
 }
 
-.github-logo {
-  margin: auto;
+.usa-footer__secondary-section {
+  padding-bottom: 0;
+}
+
+.footer-text {
+  margin: 0 auto;
+}
+
+.footer-section-bottom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #252f3e;
+}
+
+.footer-section-bottom p {
   color: white;
 }
 
-.header-right {
+.footer-section-bottom a {
+  color: #adadad;
+}
+
+.usa-identifier__logo-img {
+  max-width: 4rem;
+  padding-right: 1rem;
+}
+
+.usa-identifier {
+  font-family: Public Sans Web,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #fff;
+  background-color: #1b1b1b;
+}
+
+.usa-identifier__required-links-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.usa-identifier__container {
   margin-left: auto;
-  margin-right: 32px;
-  display: flex;
-  align-items: center;
-  width: 700px;
-  justify-content: space-between;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 64rem;
+  margin-bottom: 1rem;
 }
 
-.button-website {
-  color: #e5a000;
-  box-shadow: inset 0 0 0 2px #e5a000;
+.usa-identifier__container.final {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
 }
 
-.button-download {
-  color: lightgray;
-  box-shadow: inset 0 0 0 2px lightgrey;
+.usa-identifier__required-link {
+  color: #adadad;
+  text-decoration: underline;
+}
+
+.usa-identifier__identity-domain{
+  margin-bottom: 0;
+}
+
+.usa-identifier__identity-disclaimer{
+  margin-top: 0;
+  font-weight: bold;
 }

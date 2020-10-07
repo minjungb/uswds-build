@@ -91,7 +91,7 @@
             <form class="usa-search usa-search--small " role="search">
               <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
               <input class="usa-input" id="basic-search-field-small" type="search" name="search">
-              <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
+              <button class="usa-button search-btn" type="submit"><span class="usa-sr-only">Search</span></button>
             </form>
             <div class="buttons">
               <a class=" usa-button site-button-standards" href="javascript:void(0)"><span>Read website
@@ -124,63 +124,67 @@
 
     </header>
   </section>
-  <ul class="usa-nav__primary usa-accordion">
-    <li class="usa-nav__primary-item">
-      <button class="usa-accordion__button usa-nav__link  usa-current" aria-expanded="false"
-        aria-controls="extended-nav-section-one"><span>How to use USWDS</span></button>
-      <ul id="extended-nav-section-one" class="usa-nav__submenu">
-        <li class="usa-nav__submenu-item">
-          <a href="#" class=""> Navigation link</a>
-        </li>
-        <li class="usa-nav__submenu-item">
-          <a href="#" class=""> Navigation link</a>
-        </li>
-        <li class="usa-nav__submenu-item">
-          <a href="#" class=""> Navigation link</a>
-        </li>
-      </ul>
-    </li>
-    <li class="usa-nav__submenu-item is-current">
-      <button class="usa-nav__link"><span>Design principles</span></button>
-    </li>
-    <li class="usa-nav__-item">
-      <button class="usa-nav__link"><span>Components</span></button>
-    </li>
-    <li class="usa-nav__-item">
-      <button class="usa-nav__link"><span>Design tokens</span></button>
-    </li>
-    <li class="usa-nav__-item">
-      <button class="usa-nav__link"><span>Utilities</span></button>
-    </li>
-    <li class="usa-nav__-item">
-      <button class="usa-nav__link"><span>Page templates</span></button>
-    </li>
-    <li class="usa-nav__-item">
-      <button class="usa-nav__link"><span>About</span></button>
-    </li>
-  </ul>
+
+  <nav class="site-nav-secondary sticky">
+    <ul class="usa-nav__primary usa-accordion">
+      <li class="usa-nav__submenu-item">
+        <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+          aria-controls="extended-nav-section-one"><span>How to use USWDS</span></button>
+        <ul id="extended-nav-section-one" class="usa-nav__submenu">
+          <li class="usa-nav__submenu-item">
+            <a href="#" class=""> Navigation link</a>
+          </li>
+          <li class="usa-nav__submenu-item">
+            <a href="#" class=""> Navigation link</a>
+          </li>
+          <li class="usa-nav__submenu-item">
+            <a href="#" class=""> Navigation link</a>
+          </li>
+        </ul>
+      </li>
+      <li class="usa-nav__submenu-item is-current">
+        <button class="usa-nav__link"><span>Design principles</span></button>
+      </li>
+      <li class="usa-nav__-item">
+        <button class="usa-nav__link"><span>Components</span></button>
+      </li>
+      <li class="usa-nav__-item">
+        <button class="usa-nav__link"><span>Design tokens</span></button>
+      </li>
+      <li class="usa-nav__-item">
+        <button class="usa-nav__link"><span>Utilities</span></button>
+      </li>
+      <li class="usa-nav__-item">
+        <button class="usa-nav__link"><span>Page templates</span></button>
+      </li>
+      <li class="usa-nav__-item">
+        <button class="usa-nav__link"><span>About</span></button>
+      </li>
+    </ul>
+  </nav>
+  
 
   <aside class="sidenav">
     <ul class="site-sidenav usa-sidenav">
       <li class="usa-sidenav__item is-current">
-        <a href="/design-principles/" class="usa-current">
+        <a href="/design-principles/" class="usa-current active">
           Design principles
         </a>
-        <ul class="usa-sidenav__sublist">
-          <li class="usa-sidenav__item is-current">
-            <a href="#start-with-real-user-needs">Start with real user needs</a>
+        <ul class="usa-sidenav__sublist"></ul>
+          <li class="usa-sidenav__item">
+            <a href="#start-with-real-user-needs" class="usa-current inactive">Start with real user needs</a>
           </li>
           <li class="usa-sidenav__item is-current">
-            <a href="#earn-trust">Earn trust</a>
+            <a href="#earn-trust" class="usa-current inactive">Earn trust</a>
           </li>
           <li class="usa-sidenav__item is-current">
-            <a href="#embrace-accessibility">Embrace accessibility</a>
+            <a href="#embrace-accessibility" class="usa-current inactive">Embrace accessibility</a>
           </li>
           <li class="usa-sidenav__item is-current">
-            <a href="#promote-continuity">Promote continuity</a>
+            <a href="#promote-continuity" class="usa-current inactive">Promote continuity</a>
           </li>
           <li class="usa-sidenav__item is-current">
-            <a href="#listen">Listen</a>
+            <a href="#listen" class="usa-current inactive">Listen</a>
           </li>
         </ul>
       </li>
@@ -661,9 +665,9 @@
         <div class="grid-row footer-contact-links">
           <div class="tablet:grid-col">
             <div class="usa-media-block">
-              <img class="usa-media-block__img" src="/img/home/icon-question.svg" alt="" />
+              <img class="usa-media-block__img" src="icon-question.svg" alt="" />
               <div class="usa-media-block__body">
-                <h4>Running into an issue?</h4>
+                <h4 class="footer-text">Running into an issue?</h4>
                 <a href="https://github.com/uswds/uswds/issues/new">
                   Ask questions on GitHub
                 </a>
@@ -672,9 +676,9 @@
           </div>
           <div class="tablet:grid-col">
             <div class="usa-media-block">
-              <img class="usa-media-block__img" src="/img/home/icon-slack.svg" alt="" />
+              <img class="usa-media-block__img" src="icon-slack.svg" alt="" />
               <div class="usa-media-block__body">
-                <h4>Engage with the community</h4>
+                <h4 class="footer-text">Engage with the community</h4>
                 <a href="https://chat.18f.gov/">
                   Join our Slack channel
                 </a>
@@ -683,9 +687,9 @@
           </div>
           <div class="tablet:grid-col">
             <div class="usa-media-block">
-              <img class="usa-media-block__img" src="/node_modules/uswds/src/img/icon-envelope.svg" alt="" />
+              <img class="usa-media-block__img" src="icon-envelope.svg" alt="" />
               <div class="usa-media-block__body">
-                <h4>Reach the team</h4>
+                <h4 class="footer-text">Reach the team</h4>
                 <a href="mailto:uswds@support.digitalgov.gov">
                   Send us an email
                 </a>
@@ -696,7 +700,7 @@
             <div class="usa-media-block">
               <img class="usa-media-block__img" src="icon-twitter.svg" alt="" />
               <div class="usa-media-block__body">
-                <h4>Stay updated</h4>
+                <h4 class="footer-text">Stay updated</h4>
                 <a href="https://twitter.com/USWDS">
                   Follow us on Twitter
                 </a>
@@ -732,20 +736,68 @@
   <div class="usa-identifier">
     <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
       <div class="usa-identifier__container">
-        <div class="usa-identifier__logos">
+        <div class="usa-identifier__logos ">
           <a href="javascript:void(0);" class="usa-identifier__logo">
-            <img class="usa-identifier__logo-img" src="/node_modules/uswds/src/img/gsa-logo.svg" alt="GSA logo"
+            <img class="usa-identifier__logo-img" src="gsa-logo.svg" alt="GSA logo"
               role="img">
           </a>
         </div>
         <div class="usa-identifier__identity" aria-label="Agency description">
           <p class="usa-identifier__identity-domain">designsystem.digital.gov</p>
           <p class="usa-identifier__identity-disclaimer">
-            An official website of the <a href="https://gsa.gov">General Services Administration</a>
+            An official website of the <a href="https://gsa.gov" class="usa-identifier__required-link">General Services Administration</a>
           </p>
         </div>
       </div>
     </section>
+
+    <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+      <div class="usa-identifier__container">
+          <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                  <a href="https://www.gsa.gov/about-us" class="usa-identifier__required-link">
+                      About GSA
+                  </a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                  <a href="https://www.gsa.gov/website-information/accessibility-aids" class="usa-identifier__required-link">
+                      Accessibility support
+                  </a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                  <a href="https://www.gsa.gov/reference/freedom-of-information-act-foia" class="usa-identifier__required-link usa-link">
+                      FOIA requests
+                  </a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                  <a href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002" class="usa-identifier__required-link usa-link">
+                      No FEAR Act data
+                  </a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                  <a href="https://www.gsaig.gov/" class="usa-identifier__required-link usa-link">
+                      Office of the Inspector General
+                  </a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                  <a href="https://www.gsa.gov/reference/reports/budget-performance" class="usa-identifier__required-link usa-link">
+                      Performance reports
+                  </a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                  <a href="https://www.gsa.gov/reference/gsa-privacy-program/privacy-policy-and-procedures-guide" class="usa-identifier__required-link usa-link">
+                      Privacy policy
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="Government information and services">
+      <div class="usa-identifier__container final">
+          <div class="usa-identifier__usagov-description">Looking for U.S. government information and services?</div>
+          <a href="https://www.usa.gov/" class="usa-identifier__required-link">Visit USA.gov</a>
+      </div>
+  </section>
   </div>
 
 
