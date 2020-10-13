@@ -282,6 +282,38 @@ h4 {
   align-items: center;
 }
 
+.usa-nav__inner .usa-button.site-button-outline-secondary {
+  box-shadow: inset 0 0 0 2px #005ea2;
+  background-color: transparent;
+  color: #005ea2;
+  margin: 5px;
+  width: 100%;
+}
+
+.site-button-github{
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  
+}
+
+.usa-nav__close {
+  background-image: url(/node_modules/uswds/src/img/close-blue-60v-alt.svg);
+  height: 3rem;
+  width: 3rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+}
+
+.github-logo-mobile {
+  width: 25px;
+}
+
+.text {
+  margin-left: 7px
+}
+
 /* button colors on global nav */
 .buttons .site-button-standards{
   box-shadow: inset 0 0 0 2px #e5a000;
